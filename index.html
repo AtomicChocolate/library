@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My Bookshelf</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1 id="header">My bookshelf</h1>
-    <form id="book-form" class="hidden">
+    <div id="book-form" class="hidden">
+      <hr>
+      <h2>Add new book</h2>
       <p id="form-error"></p>
       <div class="form-field">
         <label for="book-title">Title</label>
-        <input type="text" id="book-title" name="title">
+        <input type="text" id="book-title" name="title" />
       </div>
       <div class="form-field">
         <label for="book-author">Author</label>
-        <input type="text" id="book-author" name="author">
+        <input type="text" id="book-author" name="author" />
       </div>
       <div class="form-field">
-        <label for="book-pages">No. of pages</label>
-        <input type="number" id="book-pages" name="pages">
+        <label for="book-pages">Page count</label>
+        <input type="number" id="book-pages" name="pages" />
       </div>
       <div class="form-field">
-        <p>Book read?</p>
-        <label for="finished">Yes
-          <input type="radio" id="finished" name="is-finished" value="1" checked>
-        </label>
-        <label for="not-finished">No
-          <input type="radio" id="not-finished" name="is-finished" value="0">
-        </label>
+        <input
+            type="radio"
+            id="finished"
+            name="is-finished"
+            value="1"
+            checked
+          />
+        <label for="finished">Book finished</label>
+        <input type="radio" id="not-finished" name="is-finished" value="0" />
+        <label for="not-finished">Book unfinished</label>
+        <br>
         <button id="submit-book-btn">Add</button>
+        <hr>
       </div>
-    </form>
-    <button id="add-book-btn">Add new book</button>
-    <div id="book-cards">
-      
     </div>
+    <button id="add-book-btn">Add new book</button>
+    <div id="book-cards"></div>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

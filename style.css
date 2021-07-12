@@ -1,12 +1,12 @@
 #form-error {
-    color: red;
+  color: red;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #book-cards {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
